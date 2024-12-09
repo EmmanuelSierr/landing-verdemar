@@ -23,7 +23,7 @@ const { body } = Astro.props;
       Bienestar, seguridad y naturaleza
     </div>
     <div class="text-container2">
-      <p>En el corazon del eje cafetero</p>
+      <p>en el corazón del Eje Cafetero</p>
     </div>
   </a>
 </li>
@@ -35,7 +35,7 @@ const { body } = Astro.props;
   padding: 0px 35px; 
   background-color: #c59b6d;
   color: #fff; 
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold; 
   text-align: center; 
   border-radius: 20px; 
@@ -60,7 +60,7 @@ const { body } = Astro.props;
   left: 50%; /* Ajusta horizontalmente al 50% del contenedor */
   z-index: 2;
   display: grid;
-  transform: translate(-48%, 748%);
+  transform: translate(-48%, 554%);
   }
   .text-container2 {
   position: absolute; /* Posiciona el texto sobre la imagen */
@@ -68,11 +68,11 @@ const { body } = Astro.props;
   left: 50%; /* Ajusta horizontalmente al 50% del contenedor */
   z-index: 2;
   display: grid;
-  transform: translate(-48%, 2020%);
+  transform: translate(-48%, 1523%);
   
   }
   .text-container2  p {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold; 
     color: #42210b;
     text-align: center;
@@ -127,7 +127,7 @@ const { body } = Astro.props;
 
   .shape2-container {
     position: relative;
-    top: -55px;
+    top: -60px;
     left: 50.5%;
     transform: translateX(-50%);
     background-color: #ffffff;
@@ -183,22 +183,107 @@ const { body } = Astro.props;
 
 
   /* RESPONSIVIDAD */
+  @media (max-width: 2044px) { /* Tablets */
+    .text-container2 {
+      transform: translate(-48%, 1625%);    
+    }
+  }
+
+  @media (max-width: 1818px) { /* Tablets */
+    .text-container{
+      transform: translate(-48%, 650%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 1724%);    
+    }
+  }
+  @media (max-width: 1680px) { /* Tablets */
+    .text-container{
+      transform: translate(-48%, 687%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 1819%);    
+    }
+  }
+  @media (max-width: 1600px) { /* Tablets */
+    .text-container2 {
+      transform: translate(-48%, 1809%);    
+    }
+  }
+
+  @media (max-width: 1528px) { /* Tablets */
+    .text-container{
+      transform: translate(-48%, 702%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 1901%);    
+    }
+  }
+
+  @media (max-width: 1290px) { /* Tablets */
+    .text-container{
+      transform: translate(-48%, 770%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 1966%);    
+    }
+  }
+  @media (max-width: 1149px) { /* Tablets */
+    .text-container2 {
+      transform: translate(-48%, 2027%);    
+    }
+  }
+
+  @media (max-width: 1021px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -700%);
+      padding: 0px 12px;
+      font-size: 2vw;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2078%);    
+    }
+  }
+
+
+
+
   @media (max-width: 931px) { /* Tablets */
     .boton{
-      transform: translate(-50%, -608%);
+      transform: translate(-50%, -664%);
       font-size: 2vw;
     }
     .text-container{
       transform: translate(-48%, 809%);
     }
+    .text-container2 {
+      transform: translate(-48%, 2077%);    
+    }
+  }
+  @media (max-width: 898px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -730%);
+      font-size: 1.9vw;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2124%);    
+    }
   }
   
-  @media (max-width: 731px) { /* Tablets */
+  @media (max-width: 771px) { /* Tablets */
     .boton{
       transform: translate(-50%, -758%);
     }
     .text-container{
       transform: translate(-48%, 820%);
+    }
+  }
+  @media (max-width: 730px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -846%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 2081%);    
     }
   }
   @media (max-width: 693px) { /* Tablets */
@@ -208,31 +293,89 @@ const { body } = Astro.props;
     .text-container{
       transform: translate(-48%, 855%);
     }
+    .text-container2 {
+      transform: translate(-48%, 2174%);    
+    }
   }
-  @media (max-width: 582px) { /* Tablets */
+  @media (max-width: 630px) { /* Tablets */
+    .text-container2 {
+      transform: translate(-48%, 2244%);    
+    }
+  }
+  @media (max-width: 600px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -909%);
+    }
     .text-container{
       transform: translate(-48%, 919%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 2305%);    
     }
   }
  
   @media (max-width: 546px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -932%);
+      padding: 0px 7px;
+    }
     .text-container{
       transform: translate(-48%, 937%);
     }
+  }
+  @media (max-width: 525px) { /* Tablets */
     .boton{
-      transform: translate(-50%, -836%);
-      padding: 0px 20px;
+      transform: translate(-50%, -1022%);
+      padding: 0px 7px;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2381%);    
+    }
+  }
+  @media (max-width: 500px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -978%);
+      padding: 0px 7px;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2427%);    
     }
   }
   @media (max-width: 480px) { /* Móviles */
     .boton{
       transform: translate(-50%, -982%);
-      padding: 0px 20px;
+      padding: 0px 7px;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2461%);    
+    }
+  }
+  @media (max-width: 459px) { /* Tablets */
+    .boton{
+      transform: translate(-50%, -1107%);
+      padding: 0px 7px;
+    }
+    .text-container2 {
+      transform: translate(-48%, 2454%);    
     }
   }
   @media (max-width: 430px) { /* Móviles */
     .text-container{
       transform: translate(-48%, 1000%);
+    }
+    .text-container2 {
+      transform: translate(-48%, 2600%);    
+    }
+  }
+  @media (max-width: 394px) { /* Móviles */
+    .boton{
+      transform: translate(-50%, -1184%);
+     
+    }
+  }
+  @media (max-width: 373px) { /* Móviles */
+    .boton{
+      transform: translate(-50%, -1261%);
     }
   }
 </style>

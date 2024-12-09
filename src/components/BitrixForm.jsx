@@ -5,9 +5,19 @@ const BitrixForm = () => {
   useEffect(() => {
     const script = document.createElement("script");
     script.async = true;
-    script.dataset.b24Form = "inline/261/zgj5ej"; // Cambia a "inline" según tu script
+    script.dataset.b24Form = "inline/267/27njvw"; // Cambia a "inline" según tu script
     script.dataset.skipMoving = "true";
-    script.src = "https://cdn.bitrix24.co/b27676889/crm/form/loader_261.js";
+    script.src = "https://cdn.bitrix24.co/b27676889/crm/form/loader_267.js";
+
+
+/*
+    <script data-b24-form="inline/267/27njvw" data-skip-moving="true">
+(function(w,d,u){
+var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);
+var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+})(window,document,'https://cdn.bitrix24.co/b27676889/crm/form/loader_267.js');
+</script>*/
+
 
     // Inserta el script directamente en el contenedor del formulario
     const formContainer = document.getElementById("bitrix-form");
