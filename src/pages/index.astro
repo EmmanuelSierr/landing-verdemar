@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Forma from '../components/Forma.astro';
 import BitrixForm from '../components/BitrixForm.jsx';
+import Footer from '../components/Footer.jsx';
 
 ---
 
@@ -21,7 +22,7 @@ import BitrixForm from '../components/BitrixForm.jsx';
 				<div class="absolute inset-x-0 sm:inset-x-1/2 transform translate-y-0 w-[3/4] text-white sm:w-1/2 md:w-1/3 pr-2 flex justify-end sm:justify-center">
 					<a href="#form-section">
 						<button 
-							class="px-4 sm:px-8 md:px-12 py-2 sm:py-4 bg-[#856239] text-xs sm:text-lg md:text-2xl font-semibold rounded-lg hover:bg-green-600 transition duration-300 border-4 border-white flex items-center justify-center whitespace-nowrap scale-100 sm:scale-150"
+							class="bg-[#C27D52] shadow-lg shadow-[#C27D52]/50 px-4 sm:px-8 md:px-12 py-2 sm:py-4 bg-[#856239] text-xs sm:text-lg md:text-2xl font-semibold rounded-lg hover:bg-green-600 transition duration-300 border-4 border-white flex items-center justify-center whitespace-nowrap scale-100 sm:scale-150"
 							style="transform: translateX(0) translateY(67px);">
 							QUIERO MI LOTE
 						</button>
@@ -86,15 +87,15 @@ import BitrixForm from '../components/BitrixForm.jsx';
 				  <img src="../ESCALADAS_ALTOS_DEL_MAR/planta.png" alt="Planta" class="max-h-[15%]">
 				</div>
 			  </div>
-			<div class="video-container">
+			<div class="video-horizontal2">
 				<iframe
 					id="video"
 					style="width: 100%; height: 100%;"
 					src="https://www.youtube.com/embed/FolmJyfM7c8"
 				></iframe>
 			</div>
-			<p class="mt-4 text-2xl font-bold text-[#5ca229]" style="text-align: center; line-height: 1.5;">
-				¡ECHA UN VISTAZO A TU <strong>FUTURO HOGAR</strong> !
+			<p class="mt-4 text-[3vw] text-[#5ca229]" style="text-align: center; line-height: 1.5;">
+				¡ECHA UN VISTAZO A TU <br><strong>FUTURO HOGAR</strong>!
 			  </p>
 		</div>
 	</section>
@@ -127,10 +128,7 @@ import BitrixForm from '../components/BitrixForm.jsx';
 				<img src="../ESCALADAS_ALTOS_DEL_MAR/4.png" alt="Imagen 5" class="w-full h-[90%] object-cover">
 			  </div>
 			</div>
-		  </div>
-		  
-		  
-
+		</div>
 		<div class="w-[50%] h-64 flex flex-col justify-center  items-center pt-6 pl-3"> <!-- -->
 			<div class="relative w-full" style="z-index: 1;">
 				<!-- Título -->
@@ -142,7 +140,7 @@ import BitrixForm from '../components/BitrixForm.jsx';
 				<!-- Botón -->
 				<div class="absolute inset-x-1/2 flex justify-center reserva"> <!--w-[1/a] sm:w-1/6 md:w-1/30 -->
 					<a href="#form-section">
-					<button class="px-4 sm:px-7 py-2 bg-[#93c05c] text-white text-xs sm:text-2xl font-semibold rounded-md hover:bg-green-600 transition duration-300 border-2 border-white flex items-center justify-center whitespace-nowrap"
+					<button class="bg-[#C27D52] shadow-lg shadow-[#C27D52]/50 px-4 sm:px-7 py-2 bg-[#93c05c] text-white text-xs sm:text-2xl font-semibold rounded-md hover:bg-green-600 transition duration-300 border-2 border-white flex items-center justify-center whitespace-nowrap"
 						style="height: 100%;">
 						RESERVA TU LOTE HOY
 					</button></a>
@@ -156,25 +154,53 @@ import BitrixForm from '../components/BitrixForm.jsx';
 			</div>
 		</div>
 		<div class="flex iconos">				
-			<img src="../ESCALADAS_ALTOS_DEL_MAR/servicios.jpg" alt="">
-		</div>
-	</section>
-		<div class="flex iconos">				
 			<img src="../ESCALADAS_ALTOS_DEL_MAR/iconos.png" alt="">
 		</div>
-
-		<div id="form-section">
-		<BitrixForm client:load />
+	</section>
+	<div class="flex flex-col items-center justify-center text-[#a17c54]">
+		<div>
+			<img class="planta2" src="/ESCALADAS_ALTOS_DEL_MAR/planta2.png" alt="">
+			<h2 class="tamaño-letra2">VIVE LA EXPERIENCIA</h2>
+			<h2 class="tamaño-letra3 font-extrabold">POBLADO</h2>
 		</div>
-		
-	
-	<footer class="bg-[#1a1468] text-white text-center text-sm py-4">
-		<p>© 2024 El Poblado S.A.S. Todos los derechos reservados.</p>
-	</footer>
-	  
+		<div>
+			<h2 class="tamaño-letra4">
+				Conviértete en un cliente Poblado y disfruta de nuestros beneficios complementarios
+			</h2>
+		</div>
+		<div class="mt-[-8.75vw]">
+			<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="2"
+			stroke="currentColor"
+			class="w-6 h-[9.25vw] animate-bounce"
+			>
+			<!-- Línea recta -->
+			<path stroke-linecap="round" stroke-linejoin="round" d="M12 -40v90" />
+			<!-- Flecha hacia abajo -->
+			<path stroke-linecap="round" stroke-linejoin="round" d="M19 53l-7 7-7-7" />
+			</svg>
+		</div>
+	</div>
+	<div class="flex">				
+		<img src="../ESCALADAS_ALTOS_DEL_MAR/servicios.jpg" alt="">
+	</div>
+	<div id="form-section">
+		<BitrixForm client:load />
+	</div>
+	<div>
+		<Footer />
+	</div>
 </Layout>
 
 <style>
+	.planta2{
+		position: absolute;
+		width: 37%;
+		transform: translate(-159%, -34%);
+	}
 	.image-ellos{
 		padding-left: 0%;
 		width: 100%;
@@ -217,6 +243,23 @@ import BitrixForm from '../components/BitrixForm.jsx';
 		left: 50%; /* Ajusta horizontalmente al 50% del contenedor */
 		transform: translate(-12%,83%);
 	}
+	.tamaño-letra2{
+		font-size: 3.5vw;
+		text-align: center;
+		transform: translate(-57%,83%);
+	}
+	.tamaño-letra3{
+		font-size: 3.5vw;
+		text-align: center;
+		transform: translate(-33%,83%);
+	}
+	.tamaño-letra4{
+		font-size: 1.5vw;
+		text-align: center;
+		transform: translate(66%, -80%); 
+    	width: 75%;
+		font-weight: bold;
+	}
 	.video-container2 {
 		width: 100%; 
 		height: auto; 
@@ -229,6 +272,12 @@ import BitrixForm from '../components/BitrixForm.jsx';
 		aspect-ratio: 9/16; 
 		overflow: hidden;
 		transform: translate(37%);
+	}
+	.video-horizontal2{
+		width: 90%;
+		height: auto;
+		aspect-ratio: 16 / 9;
+		transform: translate(4%, 0%);
 	}
 	.flex {
   		display: flex; /* Activa Flexbox */

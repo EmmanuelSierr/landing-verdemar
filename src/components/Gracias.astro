@@ -1,0 +1,89 @@
+---
+// Definición de Props
+interface Props {
+  body: string;
+}
+
+// Propiedades del componente
+const { body } = Astro.props;
+---
+
+<div id="container">
+    <section>
+        <img id="background" src="../thank.png" alt="Imagen de fondo">
+    </section>
+    <section >
+        <img id="primary-image" src="../thank3.png" alt="Imagen de fondo">
+        <!-- img id="secondary-image" src="../thank2.png" alt="Imagen adicional" -->
+    </section>
+</div>
+  
+<style>
+	#background {
+        position: fixed; /* Fija la imagen en el fondo */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 110%; /* Ajusta al alto del navegador */
+        object-fit: cover; /* Escala la imagen proporcionalmente para cubrir todo el espacio */
+        overflow: "hidden";
+        object-position: 70% center;
+	}
+    #primary-image{
+      display: none; 
+    }
+    #secondary-image{
+        display: none;
+    }
+ /* Ajustes para pantallas pequeñas */
+ @media (max-width: 591px) { /* Para tablets y dispositivos pequeños */
+    #background {
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 110%;
+        object-position: 76% center;
+    }
+    #primary-image{
+      display: none; 
+    }
+    #secondary-image{
+        display: none;
+    }
+  }
+
+  @media (max-width: 466px) { /* Para móviles muy pequeños */
+    #background {
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 99%;
+        object-position: 76% center;
+    }
+  }
+  @media (max-width: 424px) { /* Para móviles muy pequeños */
+    #background {
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 99%;
+        object-position: 76% center;
+        display: none;
+    }
+
+    #primary-image {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 110%; /* Ajusta al alto del navegador */
+        object-fit: cover; /* Escala la imagen proporcionalmente para cubrir todo el espacio */
+        overflow: "hidden";
+    }
+    #secondary-image {
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ajusta al ancho del navegador */
+        height: 110%; /* Ajusta al alto del navegador */
+        object-fit: cover; /* Escala la imagen proporcionalmente para cubrir todo el espacio */
+        overflow: "hidden";
+    }
+  }
+</style>
+
+
